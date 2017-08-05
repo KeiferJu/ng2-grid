@@ -1,0 +1,124 @@
+.map{
+  width: 100%;
+  height: 100%;
+ background: url(../assets/bg.jpg);
+}
+.title{
+      color: #fff;
+    font-size: 25px;
+    margin-left: 15px;
+    /* margin-top: -8px; */
+    padding-top: 10px;
+}
+.gallery-content-box
+{
+    /* width: 100%; */
+    display: inline-block;
+}
+.content-panel{
+    float: left;
+    width: 300px;
+    height:200px;
+    margin: 10px 10px 20px 20px;
+}
+
+
+.content-inner-box {
+display: inline-block;
+position: relative;
+margin: 0;
+padding: 0;
+background: #ffffff;
+height: 205px;
+width: 100%;
+// border-radius: 5px;
+overflow: hidden;
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); 
+
+  .content-info-box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    height: 150px; 
+
+    .content-img-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; 
+
+      .content-img {
+        border-radius: 2px;
+        width: 100%;
+        height: 100%; 
+      }
+    }
+  }
+
+  .content-desc-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    color: #000;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s; 
+    .content-desc {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 5px;
+      line-height: 20px;
+      text-align: left;
+      vertical-align: middle;
+      font-size: 15px; 
+    }
+  }
+
+  .content-title-box {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 40px; 
+    .content-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 80px;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      text-align: left;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #222222;
+      z-index: 2;
+      cursor: pointer; 
+    }
+
+  }
+
+}
+ 
+.content-inner-box .content-info-box:hover .content-desc-box {
+  cursor: pointer;
+  opacity: 0.7; 
+}
+
+// .content-inner-box 
+// .content-inner-box .content-title-box 
+// .content-inner-box .content-title-box 
+.content-inner-box:hover {
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}

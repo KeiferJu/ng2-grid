@@ -1,0 +1,21 @@
+<div class="map">
+<h1 class="title">示例地图</h1>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px;">
+    <div class="gallery-content-box">
+        <div class="content-panel" *ngFor='let v of data' (click)=open(v.url)>
+            <div class="content-inner-box">
+                <div class="content-info-box">
+                    <div class="content-img-box"><img src={{v.icon}} class="content-img"></div>
+                    <div class="content-desc-box">
+                        <div class="content-desc">{{v.description}}</div>
+                    </div>
+                </div>
+                <div class="content-title-box">
+                    <div class="content-title">{{v.title}}</div>
+                    <!-- <div class="content-time">2017-1-05-13</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
